@@ -1,1 +1,4 @@
-<p>listado-contenido works!</p>
+<h2>LISTADO CONTENIDO</h2>
+@for (cont of listContenido; track cont) {
+  <app-tarjeta-contenido [contenido]="cont"></app-tarjeta-contenido>
+}
