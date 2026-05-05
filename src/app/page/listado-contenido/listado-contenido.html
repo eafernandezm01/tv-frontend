@@ -1,4 +1,5 @@
 <h2>LISTADO CONTENIDO</h2>
 @for (cont of listContenido; track cont) {
-  <app-tarjeta-contenido [contenido]="cont"></app-tarjeta-contenido>
+  <app-tarjeta-contenido [contenido]="cont" 
+        (iradetalle)="abrirDetalle($event)"></app-tarjeta-contenido>
 }

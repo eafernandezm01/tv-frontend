@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { IContenido } from '../../model/IContenido';
 
 @Component({
@@ -10,4 +10,12 @@ import { IContenido } from '../../model/IContenido';
 export class TarjetaContenido {
   @Input()
   contenido!: IContenido;
+
+  @Output()
+  iradetalle = new EventEmitter ();
+
+  llamaAlPadre ():void{
+    console.log ('Hola');
+    this.iradetalle.emit (true);
+  }
 }

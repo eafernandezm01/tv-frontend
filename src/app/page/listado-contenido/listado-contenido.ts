@@ -21,4 +21,9 @@ export class ListadoContenido implements OnInit {
       this.listContenido = data;
     });
   }
+
+
+  abrirDetalle (event: any): void {
+    console.log ('HOLA ESTO LO HE RECIBIDO DEL HIJO', event);
+  }
 }
